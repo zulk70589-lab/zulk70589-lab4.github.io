@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modul E-Learning Interaktif: Dasar & Aplikasi Komputer</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJ6F12Y+Y1wFk3t1t4U9sK1F1f0B0+rT/d1P+wz5G4X5r+h5dKx1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      background-color: #f0f4f8; /* Warna latar belakang lebih lembut */
+      font-family: 'Arial', sans-serif;
+    }
+    .navbar {
+        box-shadow: 0 2px 4px rgba(0,0,0,.08);
+    }
+    .hero-section {
+        background: linear-gradient(135deg, #0d6efd 0%, #00b4d8 100%); /* Gradien keren */
+        color: white;
+        padding: 60px 0;
+        border-radius: 0 0 15px 15px;
+        margin-bottom: 30px;
+    }
+    .section-title {
+      border-left: 6px solid #ffc107; /* Warna kuning Bootstrap (warning) */
+      padding-left: 15px;
+      margin-top: 40px;
+      margin-bottom: 25px;
+      font-weight: 700;
+      color: #004d80; /* Warna judul lebih gelap */
+    }
+    .card-materi {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .card-materi:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    }
+    iframe {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    /* Style untuk membuat video responsif */
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* Rasio 16:9 */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .quiz .form-check-label {
+        font-weight: 500;
+    }
+    .footer {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fas fa-desktop"></i> E-MODUL AK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#tujuan"><i class="fas fa-bullseye"></i> Tujuan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#materi"><i class="fas fa-book-open"></i> Materi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#video"><i class="fas fa-video"></i> Video</a></li>
+          <li class="nav-item"><a class="nav-link" href="#evaluasi"><i class="fas fa-question-circle"></i> Evaluasi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <header class="hero-section text-center">
+    <div class="container">
+        <i class="fas fa-laptop-code fa-3x mb-3"></i>
+        <h1 class="display-4">Modul Pembelajaran Interaktif: Aplikasi Komputer Dasar</h1>
+        <p class="lead">Meningkatkan Kompetensi Digital Anda untuk Keberhasilan Akademik dan Profesional.</p>
+        <hr class="my-4 text-white-50">
+    </div>
+  </header>
+
+  <div class="container my-5">
+
+    <section id="tujuan">
+        <h2 class="section-title"><i class="fas fa-bullseye me-2"></i> 1. Tujuan Pembelajaran Khusus (TPK)</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-3">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary"><i class="fas fa-list-check me-2"></i> Capaian Pembelajaran Mata Kuliah (CPMK)</h5>
+                        <ol>
+                            <li><p><strong>Konsep Dasar:</strong> Menjelaskan konsep dasar aplikasi komputer dan perbedaannya dengan sistem operasi.</p></li>
+                            <li><p><strong>Klasifikasi:</strong> Membedakan berbagai jenis aplikasi komputer sesuai fungsinya (Produktivitas, Grafis, Komunikasi, dsb).</p></li>
+                            <li><p><strong>Aplikasi Praktis:</strong> Menggunakan aplikasi komputer utama (Word, Excel, PowerPoint) untuk mendukung kegiatan akademik dan profesional.</p></li>
+                            <li><p><strong>Efektivitas:</strong> Mengimplementasikan penggunaan aplikasi komputer secara efektif, efisien, dan beretika.</p></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-3">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-success"><i class="fas fa-check-double me-2"></i> Indikator Pencapaian Hasil Belajar (IPHB)</h5>
+                        <ul>
+                            <li><i class="fas fa-caret-right text-muted me-1"></i> Menyebutkan minimal 5 contoh aplikasi komputer produktivitas dan fungsinya.</li>
+                            <li><i class="fas fa-caret-right text-muted me-1"></i> Menjelaskan manfaat dan peran aplikasi komputer di 3 bidang berbeda (misalnya: Pendidikan, Bisnis, Kesehatan).</li>
+                            <li><i class="fas fa-caret-right text-muted me-1"></i> Mampu membuat dokumen laporan sederhana (Word), tabel perhitungan (Excel), dan slide presentasi (PowerPoint).</li>
+                            <li><i class="fas fa-caret-right text-muted me-1"></i> Menunjukkan sikap positif dan bertanggung jawab terhadap penggunaan teknologi komputer.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+    <section id="materi">
+        <h2 class="section-title"><i class="fas fa-book me-2"></i> 2. Konten Digital Modul & Materi</h2>
+
+        <div class="card mb-4 card-materi border-primary">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="fas fa-lightbulb me-2"></i> Materi 1: Konsep Dasar Aplikasi Komputer</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    <strong>Aplikasi Komputer (<em>Software Application</em>)</strong> adalah perangkat lunak yang dirancang untuk menjalankan tugas-tugas spesifik yang dibutuhkan oleh pengguna. Berbeda dengan Sistem Operasi (seperti Windows atau macOS) yang mengelola perangkat keras, aplikasi fokus pada penyelesaian pekerjaan, seperti mengetik laporan, mengolah data keuangan, mendesain grafis, atau berkomunikasi. 
+                </p>
+                <p>Singkatnya, aplikasi adalah <strong>"alat digital"</strong> yang membuat komputer menjadi fungsional bagi manusia.</p>
+            </div>
+        </div>
+
+        <div class="card mb-4 card-materi border-success">
+            <div class="card-header bg-success text-white">
+                <h5 class="mb-0"><i class="fas fa-cogs me-2"></i> Materi 2: Klasifikasi dan Jenis Aplikasi Komputer</h5>
+            </div>
+            <div class="card-body">
+                <p>Aplikasi dapat diklasifikasikan berdasarkan fungsinya. Berikut adalah jenis-jenis utama:</p>
+                <table class="table table-striped table-bordered mt-3">
+                    <thead class="table-info">
+                        <tr>
+                            <th>Kategori</th>
+                            <th>Fungsi Utama</th>
+                            <th>Contoh Aplikasi Populer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Produktivitas Kantor</strong></td>
+                            <td>Membuat dokumen, mengelola data, presentasi.</td>
+                            <td><span class="badge bg-danger">Microsoft Office (Word, Excel, PowerPoint)</span>, Google Workspace.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Desain Grafis & Multimedia</strong></td>
+                            <td>Mengedit foto, video, dan membuat desain visual.</td>
+                            <td><span class="badge bg-warning text-dark">Adobe Photoshop</span>, <span class="badge bg-warning text-dark">Canva</span>, Adobe Premiere Pro.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Komunikasi & Kolaborasi</strong></td>
+                            <td>Berinteraksi, rapat daring, mengirim pesan/email.</td>
+                            <td><span class="badge bg-info text-dark">Zoom</span>, Google Meet, Microsoft Teams, Gmail.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Web Browser</strong></td>
+                            <td>Mengakses dan menjelajah internet.</td>
+                            <td><span class="badge bg-secondary">Google Chrome</span>, Mozilla Firefox, Microsoft Edge.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card mb-4 card-materi border-info">
+            <div class="card-header bg-info text-white">
+                <h5 class="mb-0"><i class="fas fa-chart-line me-2"></i> Materi 3: Peran Aplikasi Komputer dalam Kehidupan</h5>
+            </div>
+            <div class="card-body">
+                <p>Penggunaan aplikasi komputer memberikan manfaat yang luas dan transformatif di berbagai sektor:</p>
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <h6><i class="fas fa-graduation-cap text-primary me-2"></i> Pendidikan</h6>
+                        <p class="small">Mempermudah pembuatan materi ajar (PowerPoint), tugas, dan analisis nilai (Excel). Mendukung e-learning melalui platform seperti Moodle atau Google Classroom.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6><i class="fas fa-briefcase text-success me-2"></i> Bisnis & Profesional</h6>
+                        <p class="small">Meningkatkan <strong>produktivitas</strong>, memfasilitasi komunikasi tim jarak jauh, dan membantu pengambilan keputusan berbasis data akurat (spreadsheet dan database).</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6><i class="fas fa-hand-holding-heart text-danger me-2"></i> Kesehatan</h6>
+                        <p class="small">Membantu pengelolaan rekam medis digital (EMR), penjadwalan pasien, dan mendukung alat diagnostik canggih.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="video">
+        <h2 class="section-title"><i class="fas fa-video me-2"></i> 3. Video Pembelajaran Interaktif</h2>
+        <p class="lead">Tonton dan pahami video pengantar berikut untuk visualisasi yang lebih baik mengenai konsep dasar Aplikasi Komputer:</p>
+        <div class="text-center video-container" style="max-width: 800px;">
+            <iframe 
+                src="https://www.youtube.com/embed/Ump5GkhkJ6s"
+                title="Video Pengenalan Aplikasi Komputer"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="evaluasi">
+        <h2 class="section-title"><i class="fas fa-question-circle me-2"></i> 4. Evaluasi Mandiri (Quiz)</h2>
+        <div class="card quiz p-4 shadow-lg border-danger text-center">
+            <p class="lead">Uji pemahaman Anda terhadap materi di atas melalui kuis eksternal yang telah disediakan.</p>
+            <a href="https://wordwall.net/resource/66403726/aplikasi-komputer" target="_blank" class="btn btn-danger btn-lg mt-3">
+                <i class="fas fa-external-link-alt me-2"></i> Akses Quiz Sekarang
+            </a>
+            <p class="mt-3 small text-muted"><em>Link ini akan membawa Anda ke Google Form, Kahoot!, atau platform kuis lainnya.</em></p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="tugas">
+        <h2 class="section-title"><i class="fas fa-tasks me-2"></i> 5. Refleksi dan Tugas Praktik</h2>
+        <div class="card p-4 shadow-sm border-warning">
+            <p class="lead text-dark"><strong>Refleksi:</strong> Penguasaan aplikasi komputer dasar adalah fondasi utama dalam menghadapi tuntutan dunia kerja dan akademik saat ini. Efisiensi kerja sangat bergantung pada pemahaman dan pengoperasian alat-alat digital ini.</p>
+            <div class="mt-3">
+                <h5 class="text-warning"><i class="fas fa-pencil-alt me-2"></i> Tugas Praktikum</h5>
+                <p><strong>Instruksi:</strong> Buatlah sebuah laporan singkat (minimal 2 halaman) menggunakan Microsoft Word atau Google Docs dengan tema: </p>
+                <blockquote class="blockquote border-start border-warning border-5 ps-3">
+                    "Analisis Peran Kritis Tiga Jenis Aplikasi Komputer (Pengolah Kata, Angka, Presentasi) dalam Mendukung Proses Pembelajaran di Perguruan Tinggi."
+                </blockquote>
+                <p class="mt-2 small text-muted"><em>Kumpulkan file dalam format PDF di platform e-learning. Batas waktu pengumpulan: [Tanggal].</em></p>
+            </div>
+        </div>
+    </section>
+
+  </div>
+
+  <footer class="footer text-center mt-5 py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <p class="mb-0 small"><i class="fas fa-code"></i> Modul Pengembangan E-Learning | Aplikasi Komputer</p>
+                <p class="mb-0 small">Hak Cipta &copy; 2025</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </body>
+</html>

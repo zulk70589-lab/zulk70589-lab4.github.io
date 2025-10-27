@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya - Gunawan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"> 
+
+    <style>
+        /* CSS Tambahan (Opsional) untuk kustomisasi */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+        }
+        .gallery-item img {
+            transition: transform 0.3s ease-in-out;
+            height: 250px; 
+            object-fit: cover;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">GUNAWAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#biodata">Biodata</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeri">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pembelajaran e-learning.html" target="_blank">Pembelajaran E-Learning</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="bg-light py-5">
+        <div class="container text-center">
+            <img src="img/saya1..jpg" class="rounded-circle mb-3 profile-img" alt="Foto Profil">
+            <h1 class="display-4">Halo, Saya Gunawan</h1>
+            <p class="lead text-muted">Seorang Mahasiswa, Suka dengan dengar musik.</p>
+            <a href="#biodata" class="btn btn-primary btn-lg mt-3">Lihat Lebih Lanjut</a>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <section id="biodata" class="mb-5">
+            <h2 class="text-center mb-4">Biodata Singkat</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card p-4">
+                        <h4 class="card-title mb-3">Informasi Pribadi</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Nama:</strong> Gunawan</li>
+                            <li class="list-group-item"><strong>Tanggal Lahir:</strong> 08 Oktober 2006</li>
+                            <li class="list-group-item"><strong>Alamat:</strong> Polewali Mandar, Indonesia</li>
+                            <li class="list-group-item"><strong>Email:</strong> wawangun4wan1006@gmail.com</li>
+                            <li class="list-group-item"><strong>Pendidikan Terakhir:</strong> UPTD SMKN BALANIPA</li>
+                        </ul>
+                        
+                        <h4 class="card-title mt-4 mb-3">Keahlian & Pengalaman</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Keahlian (Skills)</h5>
+                                <span class="badge bg-primary me-2 mb-2">HTML</span>
+                                <span class="badge bg-primary me-2 mb-2">CSS/Bootstrap</span>
+                                <span class="badge bg-primary me-2 mb-2">JavaScript</span>
+                                <span class="badge bg-primary me-2 mb-2">Desain Grafis</span>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Pengalaman</h5>
+                                <p class="mb-1"><strong>PKL</strong> di Tefa SMKN 2 MAJENE 2022 </p>
+                                <p class="text-muted small">Saya adalah siswa SMKN Balanipa jurusan Multimedia. Pada tahun 2022, saya melaksanakan PKL di TEFA SMK Negeri 2 Majene. Tugas utama saya meliputi desain grafis dan produksi cetak secara menyeluruh. Saya bertanggung jawab dalam mendesain, mencetak, dan memproduksi berbagai media, seperti foto, print dokumen, gantungan kunci, mug, stempel, dan proses press (transfer media). Pengalaman ini memperkuat keterampilan teknis saya di bidang cetak dan desain industri kreatif.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="galeri" class="py-5">
+            <h2 class="text-center mb-4">Galeri </h2>
+            <p class="text-center text-muted mb-5">Beberapa momen terbaik yang ingin saya bagikan.</p>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm gallery-item">
+                        <img src="img/Gambar WhatsApp 2025-09-14 pukul 16.56.59_713d562c.jpg" class="card-img-top" alt="Proyek A">
+                        <div class="card-body">
+                            <h5 class="card-title">Momen Kuliah Di Semester 1</h5>
+                            <p class="card-text"> 05 Desember 2024 </p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Kembali</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm gallery-item">
+                        <img src="img/Gambar WhatsApp 2025-10-11 pukul 07.18.24_d55ef278.jpg" class="card-img-top" alt="Proyek B">
+                        <div class="card-body">
+                            <h5 class="card-title">Momen Hut RI Ke 77  </h5>
+                            <p class="card-text"> 17 Agustus 2022 </p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Kembali</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm gallery-item">
+                        <img src="img/Gambar WhatsApp 2025-09-14 pukul 16.56.58_09ea7f18.jpg" class="card-img-top" alt="Proyek C">
+                        <div class="card-body">
+                            <h5 class="card-title">Momen Kuliah Di Semester 3</h5>
+                            <p class="card-text">26 Agustus 2025</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Kembali</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+        
+        <section id="kontak" class="py-5">
+            <h2 class="text-center mb-4">Hubungi Saya</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <p class="lead">Anda Dapat Hubungi saya melalui:</p>
+                    <a href="mailto:wawangun4wan1006@gmail.com" class="btn btn-info text-white me-2 mb-2"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://wa.me/6282346769964" class="btn btn-success me-2 mb-2"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://www.instagram.com/wawan.gunawan08?igsh=MWpiNm82dnBucnljMg==" target="_blank" class="btn btn-secondary mb-2"><i class="fab fa-instagram"></i> instagram</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Gunawan.Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
